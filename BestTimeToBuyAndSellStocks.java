@@ -15,7 +15,7 @@ public class BestTimeToBuyAndSellStocks {
         //int prices[]={1,2,4};
         BestTimeToBuyAndSellStocks b=new BestTimeToBuyAndSellStocks();
         int max=b.maxProfit(prices);
-        System.out.println("Max Profit ="+max);
+        System.out.println("Max Profit is="+max);
 
     }
     public int maxProfit(int[] prices) {
