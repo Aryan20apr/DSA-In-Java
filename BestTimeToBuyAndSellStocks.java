@@ -33,7 +33,7 @@ public class BestTimeToBuyAndSellStocks {
         if(dp[day][bought] != -1)
             return dp[day][bought];
         
-        if(bought == 0) { // buy
+        if(bought == 0) { //buy
             return dp[day][bought] = Math.max(maxProfit(prices, day + 1, 1, dp) - prices[day], maxProfit(prices, day + 1, bought, dp));
         }
         else { // sell
