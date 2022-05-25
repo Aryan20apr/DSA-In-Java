@@ -11,10 +11,10 @@ public class BestTimeToBuyAndSellStocks {
     
     public static void main(String[] args)
     {
-        int prices[]={1,2,3,0,2};
+        int price[]={1,2,3,0,2};
         //int prices[]={1,2,4};
         BestTimeToBuyAndSellStocks b=new BestTimeToBuyAndSellStocks();
-        int max=b.maxProfit(prices);
+        int max=b.maxProfit(price);
         System.out.println("Max Profit is="+max);
 
     }
