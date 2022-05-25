@@ -18,12 +18,12 @@ public class BestTimeToBuyAndSellStocks {
         System.out.println("Max Profit is="+max);
 
     }
-    public int maxProfit(int[] prices) {
-        int dp[][] = new int[prices.length][2];
-        for(int i = 0; i < prices.length; i++)
+    public int maxProfit(int[] price) {
+        int dp[][] = new int[price.length][2];
+        for(int i = 0; i < price.length; i++)
             Arrays.fill(dp[i], -1);
         
-        return maxProfit(prices, 0, 0, dp);
+        return maxProfit(price, 0, 0, dp);
     }
     
     public int maxProfit(int[] prices, int day, int bought, int[][] dp) {
