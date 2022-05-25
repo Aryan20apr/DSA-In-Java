@@ -11,19 +11,19 @@ public class BestTimeToBuyAndSellStocks {
     
     public static void main(String[] args)
     {
-        int prices[]={1,2,3,0,2};
+        int price[]={1,2,3,0,2};
         //int prices[]={1,2,4};
         BestTimeToBuyAndSellStocks b=new BestTimeToBuyAndSellStocks();
-        int max=b.maxProfit(prices);
+        int max=b.maxProfit(price);
         System.out.println("Max Profit is="+max);
 
     }
-    public int maxProfit(int[] prices) {
-        int dp[][] = new int[prices.length][2];
-        for(int i = 0; i < prices.length; i++)
+    public int maxProfit(int[] price) {
+        int dp[][] = new int[price.length][2];
+        for(int i = 0; i < price.length; i++)
             Arrays.fill(dp[i], -1);
         
-        return maxProfit(prices, 0, 0, dp);
+        return maxProfit(price, 0, 0, dp);
     }
     
     public int maxProfit(int[] prices, int day, int bought, int[][] dp) {
